@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget http://dl.ubnt.com/unifi-voip/1.0.2-i7ssko/unifi_voip_sysvinit_all.deb && \
+RUN wget https://dl.ubnt.com/unifi-voip/1.0.4-xb36bd/unifi_voip_sysvinit_all.deb && \
     dpkg -i unifi_voip_sysvinit_all.deb && \
     rm unifi_voip_sysvinit_all.deb
 
